@@ -11,6 +11,7 @@
 
 @interface HomeViewController : UIViewController <CLLocationManagerDelegate>
 - (IBAction)dropPin:(id)sender;
-- (IBAction)logOut:(id)sender;
 @property(nonatomic, strong) CLLocationManager *locationManager;
+- (IBAction)checkTheMap:(id)sender;
+- (IBAction)dropIt:(id)sender;
 @end

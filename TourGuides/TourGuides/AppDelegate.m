@@ -10,6 +10,7 @@
 #import <Parse/Parse.h>
 #import <ParseFacebookUtils/PFFacebookUtils.h>
 #import <FacebookSDK/FacebookSDK.h>
+#import <GoogleMaps/GoogleMaps.h>
 
 @interface AppDelegate ()
 
@@ -23,6 +24,7 @@
     [Parse setApplicationId:@"r6pz3e6cGZTeh3mA0G1t2GZvRt1DQa6xco8SevBr"
                   clientKey:@"429gdmo32Y0N2slPdTPie7ZNqOV2Yvo6dd6LiYM9"];
     [PFFacebookUtils initializeFacebook];
+    [GMSServices provideAPIKey:@"AIzaSyD7oP1q4MLBIR1weDKUHLEduCmgpY-QbG8"];
     return YES;
 }
 

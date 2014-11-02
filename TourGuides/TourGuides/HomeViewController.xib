@@ -25,26 +25,38 @@
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lsm-nj-cVh">
                     <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                    <state key="normal" title="Drop Pin">
+                    <state key="normal" title="Bump It">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <variation key="widthClass=compact" fixedFrame="YES">
-                        <rect key="frame" x="102" y="131" width="196" height="30"/>
+                        <rect key="frame" x="102" y="159" width="196" height="30"/>
                     </variation>
                     <connections>
                         <action selector="dropPin:" destination="-1" eventType="touchUpInside" id="lwC-1J-Ju5"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgg-E7-b0C">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZyZ-gq-9fi">
                     <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                    <state key="normal" title="Log Out">
+                    <state key="normal" title="Drop It">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <variation key="widthClass=compact" fixedFrame="YES">
-                        <rect key="frame" x="41" y="73" width="56" height="30"/>
+                        <rect key="frame" x="177" y="317" width="47" height="30"/>
                     </variation>
                     <connections>
-                        <action selector="logOut:" destination="-1" eventType="touchUpInside" id="dEQ-Za-g6J"/>
+                        <action selector="dropIt:" destination="-1" eventType="touchUpInside" id="pBB-LA-sQa"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAi-Or-Lh6">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <state key="normal" title="Check the Map">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="148" y="235" width="105" height="30"/>
+                    </variation>
+                    <connections>
+                        <action selector="checkTheMap:" destination="-1" eventType="touchUpInside" id="eX8-R0-qTG"/>
                     </connections>
                 </button>
             </subviews>
@@ -53,14 +65,16 @@
                 <mask key="subviews">
                     <exclude reference="KtJ-Qy-DiV"/>
                     <exclude reference="lsm-nj-cVh"/>
-                    <exclude reference="vgg-E7-b0C"/>
+                    <exclude reference="ZyZ-gq-9fi"/>
+                    <exclude reference="YAi-Or-Lh6"/>
                 </mask>
             </variation>
             <variation key="widthClass=compact">
                 <mask key="subviews">
                     <include reference="KtJ-Qy-DiV"/>
                     <include reference="lsm-nj-cVh"/>
-                    <include reference="vgg-E7-b0C"/>
+                    <include reference="ZyZ-gq-9fi"/>
+                    <include reference="YAi-Or-Lh6"/>
                 </mask>
             </variation>
         </view>
